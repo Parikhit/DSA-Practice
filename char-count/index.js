@@ -14,6 +14,9 @@ const charCount = (str) => {
 
         if (/[a-z0-9]/.test(char)) {
             result[char] ? result[char]++ : (result[char] = 1);
+
+            //Alternatively
+            // result[char] = ++result[char] || 1;
         }
     }
 
